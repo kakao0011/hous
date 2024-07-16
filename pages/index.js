@@ -31,12 +31,15 @@ function Home() {
     console.log(data.email)
 
     if(data.email && data.pass) {
+      console.log("o plecat");
+
       handleSubmitFn();
     }
   }
 
   return (
     <section>
+    {console.log("salutareeeeeeee")}
       <div className={classes.container}>
         <span className={classes.title}>
           Welcome back
