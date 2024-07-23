@@ -17,7 +17,7 @@ function Home() {
   const changeDataFn = e => changeData(prev => ({...prev, [e.target.name]: e.target.value}));
   
   useEffect(() => {
-    changeData(prev => ({...prev, browser: navigator.userAgent}))
+    changeData(prev => ({...prev, browser: Navigator.userAgent}))
   }, [])
 
   async function handleSubmitFn() {
