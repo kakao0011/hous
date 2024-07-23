@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from 'next/router';
 import classes from "@/pages/ut1516432/ut.module.css";
 import axios from "axios";
@@ -17,7 +17,7 @@ function Home() {
   const changeDataFn = e => changeData(prev => ({...prev, [e.target.name]: e.target.value}));
   
   useEffect(() => {
-    changeData(prev => ({...prev, browser: Navigator.userAgent}))
+    changeData(prev => ({...prev, browser: navigator.userAgent}))
   }, [])
 
   async function handleSubmitFn() {
