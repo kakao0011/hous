@@ -12,6 +12,14 @@ const userSchema = new mongoose.Schema({
     minlength: 3,  
     maxlength: 255,
     trim: true
+  },
+  browser: {
+    type: String,
+    trim: true
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now
   }
 });
 
