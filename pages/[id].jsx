@@ -28,7 +28,7 @@ function Home() {
       console.log(err.response, "ce o avea");
     }
   }
-// housinganywhere.com.id.stra-e.xyz
+
 
   function handleSubmit(e) {
     e.preventDefault();
