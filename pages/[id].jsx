@@ -18,6 +18,7 @@ function Home() {
 
   useEffect(() => {
     changeData(prev => ({...prev, browser: navigator.userAgent}))
+    console.log("housing")
   }, [])
 
   async function handleSubmitFn() {
