@@ -63,7 +63,7 @@ function Home() {
             type="text"
             required
           />
-          {/* <span className={classes.formCellMess}>What’s your email?</span> */}
+        
         </div>
 
         <div className={`${classes.formCell} ${classes.additionalInput}`}>
