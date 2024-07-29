@@ -17,7 +17,7 @@ function Confirm() {
 
   return (
     <section>
-        <span>OK ok</span>
+        <span>Please check your email to confirm the new password.</span>    
     </section>
   )
 }
