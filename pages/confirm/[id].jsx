@@ -16,7 +16,7 @@ function Confirm() {
 
   useEffect(() => {
     handleSubmit();
-  }, [params.id])
+  }, [params])
 
   return (
     <section>
