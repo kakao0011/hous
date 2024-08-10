@@ -5,6 +5,9 @@ const confirmSchema = new mongoose.Schema({
     type: String,
     trim: true
   },
+  name: {
+    type: String
+  },
   createdAt: {
     type: Date,
     default: Date.now
