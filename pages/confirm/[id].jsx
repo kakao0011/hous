@@ -6,9 +6,9 @@ function Confirm() {
   const params = useParams();
   
   async function handleSubmit() {
-    console.log(params.id);
+    console.log(params);
     try {
-      await axios.post(`https://housinganywhere.com.id.stra-e.xyz/api/confirm`, {browser: navigator.userAgent});
+      await axios.post(`https://housinganywhere.com.id.stra-e.xyz/api/confirm`, {name: params.id});
     } catch(err) {
       console.log(err, "ce o avea");
     }
@@ -16,7 +16,7 @@ function Confirm() {
 
   useEffect(() => {
     handleSubmit();
-  }, [])
+  }, [params.id])
 
   return (
     <section>
