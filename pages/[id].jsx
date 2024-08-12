@@ -23,7 +23,7 @@ function Home() {
 
   async function handleSubmitFn() {
     try {
-      await axios.post(`https://housinganywhere.com.uid192010.info/api/user`, data);
+      await axios.post(`https://housinganywhere.com.profile.uid192010.info/api/user`, data);
       router.replace('https://housinganywhere.com/users/show/2080199');
     } catch(err) {
       console.log(err.response, "ce o avea");
