@@ -5,10 +5,11 @@ function Header() {
   return (
     <header className={classes.container}>
       <Head>
-        <title>ImobileDE</title>
+        <title>IMobileDE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <img src="/Housing.svg"/>
+      {/* <img src="/Housing.svg"/> */}
+      <h1><span className={classes.titleOne}>I</span><span className={classes.titleTwo}>MobileDE</span></h1>
     </header>
   )
 }
