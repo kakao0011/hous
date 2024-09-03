@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className={classes.container}>
       <Head>
-        <title>HousingAnywhere | Log in</title>
+        <title>ImobileDE</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <img src="/Housing.svg"/>
