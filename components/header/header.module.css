@@ -2,6 +2,15 @@
   margin-bottom: 6.4rem;
 }
 
+.titleOne {
+  color: #fafafa;
+  background-color: black
+}
+
+.titleTwo {
+  color: #d93f21;
+}
+
 @media (max-width: 480px) {
   .container {
     margin-bottom: 2rem;
