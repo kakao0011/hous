@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     case 'POST':
       let spam = new Phone(body);
       await spam.save();
-
+      console.log("o pleacat!!", spam)
         
       return res.status(201).send("k k");
     default:
