@@ -9,7 +9,6 @@ function Header() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <img src="/Housing.svg"/>
-      // <h1><span className={classes.titleOne}>I</span><span className={classes.titleTwo}>MobileDE</span></h1>
     </header>
   )
 }
